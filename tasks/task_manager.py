@@ -69,10 +69,37 @@ def is_spell_significant(spell1_results, spell2_results, alpha=0.05):
    pass
 
 
-# Açıklama: İki büyü arasındaki fark anlamlı mı (p<0.05)?
-# Input: spell1_results, spell2_results, alpha
-# Output: bool
-# Örnek:
-# is_spell_significant([1,1,1], [0,0,0], alpha=0.05) → True
+ """
+    Bu fonksiyon, büyü (spell) sonuçlarını içeren bir liste veya sözlükten,
+    özet istatistiksel bilgiler çıkararak okunabilir bir rapor üretmek için kullanılır.
+
+    Parametre:
+    ----------
+    spell_results : list[dict] veya dict
+        Her bir büyüye (spell) ait başarı, hasar, mana kullanımı, isabet oranı gibi
+        bilgileri içeren veri yapısıdır.
+
+        Örnek giriş (list biçiminde):
+        [
+            {"name": "Fireball", "damage": 150, "mana": 40, "hit": True},
+            {"name": "Ice Spike", "damage": 100, "mana": 30, "hit": False},
+            ...
+        ]
+
+    Fonksiyonun Görevi:
+    -------------------
+    - Her büyünün kaç kez kullanıldığını,
+    - Toplam ve ortalama hasarını,
+    - Toplam mana tüketimini,
+    - Başarı oranlarını (kaç kez isabet etti),
+    - En etkili büyüleri belirleyerek
+
+    güzel formatlanmış bir şekilde ekrana yazdırmak veya döndürmek olabilir.
+
+    Dönüş:
+    ------
+    str veya dict
+        Rapor stringi veya özet bilgileri içeren sözlük dönebilir.
+    """
 def generate_spell_summary_report(spell_results):
    pass
