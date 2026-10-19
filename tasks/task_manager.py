@@ -69,7 +69,8 @@ def is_spell_significant(spell1_results, spell2_results, alpha=0.05):
    pass
 
 
- """
+def generate_spell_summary_report(spell_results):
+    """
     Bu fonksiyon, büyü (spell) sonuçlarını içeren bir liste veya sözlükten,
     özet istatistiksel bilgiler çıkararak okunabilir bir rapor üretmek için kullanılır.
 
@@ -101,5 +102,4 @@ def is_spell_significant(spell1_results, spell2_results, alpha=0.05):
     str veya dict
         Rapor stringi veya özet bilgileri içeren sözlük dönebilir.
     """
-def generate_spell_summary_report(spell_results):
-   pass
+    pass
